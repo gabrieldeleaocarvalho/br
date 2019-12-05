@@ -93,7 +93,7 @@ public class JanelaP extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(53, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton3)
                 .addGap(44, 44, 44)
                 .addComponent(jLabel1)
@@ -113,14 +113,8 @@ public class JanelaP extends javax.swing.JFrame {
         nivel++;
         jLabel1.setVisible(true);
         jLabel1.setText("Seu nivel é: " + nivel);
-        JanelaP2 jan2= new JanelaP2();
-        jan2.setVisible(true);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        nivel = 0;
-        jLabel1.setText("Seu nivel é: " + nivel);
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         if(4<nivel){
@@ -136,6 +130,11 @@ public class JanelaP extends javax.swing.JFrame {
         setVisible(false);
         dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        nivel = 0;
+        jLabel1.setText("Seu nivel é: " + nivel);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
